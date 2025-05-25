@@ -1,0 +1,54 @@
+
+@import "tailwindcss";
+/* Target only large-screen navigation links */
+#navbar-menu a {
+    color: white !important;
+  }
+
+/* backgroung pattern */
+#overlay-container::before {
+    content: "";
+    position: absolute;
+    top: -0px;   /* Moves overlay to the top 
+    left: -0px;  /* Moves overlay to the left */
+    width: 100%;
+    height: 100%;
+    background: url('/images/lineart-fast-food-pattern.png') repeat;
+    opacity:0.05;
+    z-index: 1;
+  }
+
+ /* Hamburger Icon - Three Vertical Lines */
+
+ .hamburger {
+    width: 24px;
+    height: 35px;
+    display: flex;
+    flex-direction: row; /* horizontal layout */
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger span {
+    width: 4px;
+    height: 100%;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Animation when active */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px,-8px);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  

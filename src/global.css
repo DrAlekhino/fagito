@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root {
+    /* Font Sizes */
+    --font-size-h1-xl: 2.95rem;
+    --font-size-h1-lg: 2.95rem;
+    --font-size-h1-md: 2.5rem;
+    --font-size-h1-sm: 2.5rem; 
+
+    --font-size-h2-xl: 2.35rem;
+    --font-size-h2-lg: 2.35rem;
+    --font-size-h2-md: 1.95rem;
+    --font-size-h2-sm: 1.75rem;
+
+    --font-size-h3-xl: 2rem;
+    --font-size-h3-lg: 2rem;
+    --font-size-h3-md: 1.75rem;
+    --font-size-h3-sm: 1.5rem;
+
+    --font-size-h4-xl: 1.6rem;
+    --font-size-h4-lg: 1.6rem;
+    --font-size-h4-md: 1.5rem;
+    --font-size-h4-sm: 1.4rem;
+
+    --font-size-h5-xl: 1.125rem;
+    --font-size-h5-lg: 1.125rem;
+    --font-size-h5-md: 1rem;
+    --font-size-h5-sm: 0.95rem;
+
+    --font-size-p-xl: 1.35rem;
+    --font-size-p-lg: 1.35rem;
+    --font-size-p-md: 1.35rem;
+    --font-size-p-sm: 1.25rem; 
+
+    /* Font Families */
+
+    --font-family-headings: 'Playfair Display', serif;
+    --font-family-body: 'Poppins', sans-serif;
+    /* Text Colors */
+    --text-color-h1: #fff;
+    }
+    /* Override any existing link styles */
+header nav ul li a, 
+header nav ul li .link {
+    color: white !important;
+    }
+
+h1 {
+    font-size: var(--font-size-h1-xl);
+    font-family: var(--font-family-headings);
+    font-weight: 900;
+    font-style: italic;
+    
+    color: var(--text-color-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2-xl);
+    font-family: var(--font-family-headings);
+}
+
+h3 {
+    font-size: var(--font-size-h3-xl);
+    font-family: var(--font-family-headings);
+}
+
+h4 {
+    font-size: var(--font-size-h4-xl);
+    font-family: var(--font-family-headings);
+}
+
+h5 {
+    font-size: var(--font-size-h5-xl);
+    font-family: var(--font-family);
+}
+
+p {
+    font-size: var(--font-size-p-xl);
+    font-family: var(--font-family);
+}
+
+@media (max-width: 639px) {
+    h1 { font-size: var(--font-size-h1-sm); }
+    h2 { font-size: var(--font-size-h2-sm); }
+    h3 { font-size: var(--font-size-h3-sm); }
+    h4 { font-size: var(--font-size-h4-sm); }
+    h5 { font-size: var(--font-size-h5-sm); }
+    p { font-size: var(--font-size-p-sm); }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    h1 { font-size: var(--font-size-h1-md); }
+    h2 { font-size: var(--font-size-h2-md); }
+    h3 { font-size: var(--font-size-h3-md); }
+    h4 { font-size: var(--font-size-h4-md); }
+    h5 { font-size: var(--font-size-h5-md); }
+    p { font-size: var(--font-size-p-md); }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    h1 { font-size: var(--font-size-h1-lg); }
+    h2 { font-size: var(--font-size-h2-lg); }
+    h3 { font-size: var(--font-size-h3-lg); }
+    h4 { font-size: var(--font-size-h4-lg); }
+    h5 { font-size: var(--font-size-h5-lg); }
+    p { font-size: var(--font-size-p-lg); }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    h1 { font-size: var(--font-size-h1-xl); }
+    h2 { font-size: var(--font-size-h2-xl); }
+    h3 { font-size: var(--font-size-h3-xl); }
+    h4 { font-size: var(--font-size-h4-xl); }
+    h5 { font-size: var(--font-size-h5-xl); }
+    p { font-size: var(--font-size-p-xl); }
+}

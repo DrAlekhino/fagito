@@ -1,0 +1,47 @@
+@import "tailwindcss";
+/* Body Logo Image */
+#body__logo {
+    width: 6rem !important;
+    height: auto;
+}
+@media (max-width: 767px) {
+    #body__logo {
+        width: 5rem !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    #body__logo {
+        width: 8rem !important;
+    }
+}
+@media (min-width: 1024px) {
+    #body__logo {
+        width: 6rem !important;
+    }
+}
+/* Navbar Logo */
+#navbar__image {
+    width: 7rem;
+    height: auto;
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+    #navbar__image {
+        width: 7rem;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    #navbar__image {
+        width: 9rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+    #navbar__image {
+        width: 12rem;
+    }
+}
